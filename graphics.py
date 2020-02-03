@@ -490,10 +490,10 @@ class GraphicsObject:
             
     def undraw(self):
 
-        """Undraw the object (i.e. hide it). Returns silently if the
+        """Undraw the object (i.e. hide it). Returns false if the
         object is not currently drawn."""
         
-        if not self.canvas: return
+        if not self.canvas: return False
         if not self.canvas.isClosed():
             self.canvas.delete(self.id)
             self.canvas.delItem(self)

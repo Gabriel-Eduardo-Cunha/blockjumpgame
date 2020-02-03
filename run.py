@@ -1,3 +1,3 @@
 from blockJumpGame import BlockJumpGame
 
-BlockJumpGame()
+BlockJumpGame('normal',1, 80)
